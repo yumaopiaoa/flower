@@ -29,10 +29,10 @@ $(function() {
 
 		onOff = false;
 		timer = setInterval(function() {
-			$("#top_bar .person_img img").attr("src", "../images/person" + num + ".png");
+			$("#top_bar .person_img img").attr("src", "./assets/images/person" + num + ".png");
 			if(num >= 10) {
 				clearInterval(timer);
-				$("#top_bar .person_img img").attr("src", "../images/person0.png");
+				$("#top_bar .person_img img").attr("src", "./assets/images/person0.png");
 				onOff = true;
 				myGold -= exceptional;
 				myGolds();
